@@ -1,0 +1,14 @@
+{
+  "name": "Root PWA",
+  "short_name": "Root",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/file.svg",
+      "sizes": "48x48 72x72 96x96 128x128 256x256 512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}

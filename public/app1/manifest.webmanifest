@@ -1,0 +1,14 @@
+{
+  "name": "App1 PWA",
+  "short_name": "App1",
+  "start_url": "/app1",
+  "scope": "/app1/",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/file.svg",
+      "sizes": "48x48 72x72 96x96 128x128 256x256 512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}
