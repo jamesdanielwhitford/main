@@ -1,22 +1,18 @@
-import Link from "next/link";
+import React from 'react';
+import App2Welcome from './components/App2Welcome';
+import Link from 'next/link';
 
-export default function App2Home() {
+export default function App2Page() {
   return (
-    <main style={{ padding: '2rem' }}>
-      <h1>App2 PWA</h1>
-      <p>This is the App2 PWA, controlled by <strong>/app2/sw.js</strong> and scoped to <strong>/app2/</strong>.</p>
-      <p>The browser should be running a service worker with the scope: {`http://localhost:3000/app2/`}</p>
-      <nav>
-        <h2>Navigation</h2>
-        <ul>
-          <li>
-            <Link href="/">Back to Home</Link>
-          </li>
-          <li>
-            <Link href="/app2/example-page">Go to nested page</Link>
-          </li>
-        </ul>
-      </nav>
-    </main>
+    <div>
+      <h2>Welcome to App 2</h2>
+      <p>This is the main page for the App 2 PWA. It demonstrates a completely separate application structure from App 1.</p>
+      <App2Welcome />
+      <div style={{marginTop: '2rem'}}>
+          <Link href="/app2/example-page" style={{ textDecoration: 'underline' }}>
+            Go to the example page inside App 2 &rarr;
+          </Link>
+      </div>
+    </div>
   );
 }

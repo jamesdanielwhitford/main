@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Script from "next/script";
+import AppNav from "./components/AppNav";
 
 export const metadata: Metadata = {
   title: "App1 PWA",
@@ -14,6 +15,10 @@ export default function App1Layout({
 }) {
   return (
     <>
+      <AppNav />
+      <div style={{ padding: '2rem' }}>
+        {children}
+      </div>
       <Script id="sw-registration-app1" strategy="afterInteractive">
         {`
           if ('serviceWorker' in navigator) {
@@ -23,7 +28,6 @@ export default function App1Layout({
           }
         `}
       </Script>
-      {children}
     </>
   );
 }
