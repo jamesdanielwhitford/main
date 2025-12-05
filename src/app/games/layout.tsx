@@ -5,7 +5,7 @@ import AppNav from "./components/AppNav";
 export const metadata: Metadata = {
   title: "App2 PWA",
   description: "App2 PWA",
-  manifest: "/app2/manifest.webmanifest",
+  manifest: "/games/manifest.webmanifest",
 };
 
 export default function App2Layout({
@@ -22,7 +22,7 @@ export default function App2Layout({
       <Script id="sw-registration-app2" strategy="afterInteractive">
         {`
           if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/app2/sw.js', { scope: '/app2/' })
+            navigator.serviceWorker.register('/games/sw.js', { scope: '/games/' })
               .then(registration => console.log('App2 SW registered with scope: ', registration.scope))
               .catch(error => console.log('App2 SW registration failed: ', error));
           }

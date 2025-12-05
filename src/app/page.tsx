@@ -11,12 +11,12 @@ export default function Home() {
         <SimpleCard
           title="App 1"
           description="An independent PWA with its own components, hooks, and scope."
-          link="/app1"
+          link="/beautifulmind"
         />
         <SimpleCard
           title="App 2"
           description="Another independent PWA, kept separate from App 1."
-          link="/app2"
+          link="/games"
         />
       </div>
     </>

@@ -9,7 +9,7 @@ export default function App2Page() {
       <p>This is the main page for the App 2 PWA. It demonstrates a completely separate application structure from App 1.</p>
       <App2Welcome />
       <div style={{marginTop: '2rem'}}>
-          <Link href="/app2/example-page" style={{ textDecoration: 'underline' }}>
+          <Link href="/games/example-page" style={{ textDecoration: 'underline' }}>
             Go to the example page inside App 2 &rarr;
           </Link>
       </div>

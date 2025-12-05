@@ -5,7 +5,7 @@ import AppNav from "./components/AppNav";
 export const metadata: Metadata = {
   title: "App1 PWA",
   description: "App1 PWA",
-  manifest: "/app1/manifest.webmanifest",
+  manifest: "/beautifulmind/manifest.webmanifest",
 };
 
 export default function App1Layout({
@@ -22,7 +22,7 @@ export default function App1Layout({
       <Script id="sw-registration-app1" strategy="afterInteractive">
         {`
           if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/app1/sw.js', { scope: '/app1/' })
+            navigator.serviceWorker.register('/beautifulmind/sw.js', { scope: '/beautifulmind/' })
               .then(registration => console.log('App1 SW registered with scope: ', registration.scope))
               .catch(error => console.log('App1 SW registration failed: ', error));
           }
